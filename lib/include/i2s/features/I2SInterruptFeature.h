@@ -6,6 +6,10 @@
 
 #pragma once
 
+// ensure the MCU series is correct
+#ifdef STM32PLUS_F1_MD
+#error This class cannot be used with the STM32F1 MD series
+#endif
 
 /*
  * Forward declare the IRQ handler names
