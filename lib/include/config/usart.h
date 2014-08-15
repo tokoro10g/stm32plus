@@ -77,9 +77,9 @@
 
   #include "usart/features/f1/xl_hd_cl/UsartInterruptFeature.h"
 
-#elif defined(STM32PLUS_F1_MD_VL)
+#elif defined(STM32PLUS_F1_MD_VL) || defined(STM32PLUS_F1_MD)
 
-  #include "usart/features/f1/mdvl/UsartInterruptFeature.h"
+  #include "usart/features/f1/mdvl_md/UsartInterruptFeature.h"
 
 #elif defined(STM32PLUS_F4)
 
