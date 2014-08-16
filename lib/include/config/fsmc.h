@@ -13,8 +13,9 @@
  * The FSMC is not available on the F105 and F107 devices.
  */
 
-#if defined(STM32PLUS_F1_CL) || defined(STM32PLUS_F1_MD_VL) || defined(STM32PLUS_F0)     // the 100/105/107 do not have the FSMC
-#error The FSMC is not available on the F0/F100/F105/F107
+// the 100/103md/105/107 do not have the FSMC
+#if defined(STM32PLUS_F1_CL) || defined(STM32PLUS_F1_MD) || defined(STM32PLUS_F1_MD_VL) || defined(STM32PLUS_F0)
+#error The FSMC is not available on the F0/F100/F103MD/F105/F107
 #endif
 
 

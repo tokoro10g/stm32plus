@@ -129,7 +129,7 @@ namespace stm32plus {
     }
   };
 
-#if !defined(STM32PLUS_F1_CL) && !defined(STM32PLUS_F1_MD_VL)
+#if !defined(STM32PLUS_F1_CL) && !defined(STM32PLUS_F1_MD) && !defined(STM32PLUS_F1_MD_VL)
 
   /**
    * FSMC
@@ -524,7 +524,7 @@ namespace stm32plus {
     }
   };
 
-#if !defined(STM32PLUS_F1_CL) && !defined(STM32PLUS_F1_MD_VL)
+#if !defined(STM32PLUS_F1_CL) && !defined(STM32PLUS_F1_MD) && !defined(STM32PLUS_F1_MD_VL)
 
   /**
    * SDIO

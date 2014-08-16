@@ -13,8 +13,9 @@
  * to give access to the peripheral. SDIO support is not available on the F105 and F107 devices.
  */
 
-#if defined(STM32PLUS_F1_CL) || defined(STM32PLUS_F1_MD_VL)      // the 100/105/107 do not have SDIO
-#error SDIO is not available on the F105/F107
+// the 100/103md/105/107 do not have SDIO
+#if defined(STM32PLUS_F1_CL) || defined(STM32PLUS_F1_MD) || defined(STM32PLUS_F1_MD_VL)      
+#error SDIO is not available on the F100/F103MD/F105/F107
 #endif
 
 // sdcard depends on rcc, device, gpio, nvic, dma, timing

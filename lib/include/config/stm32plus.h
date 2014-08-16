@@ -15,6 +15,7 @@
  *
  *  STM32PLUS_F1_HD
  *  STM32PLUS_F1_CL
+ *  STM32PLUS_F1_MD
  *  STM32PLUS_F1_MDVL
  *  STM32PLUS_F0_51
  *  STM32PLUS_F4
@@ -34,6 +35,9 @@
   #define STM32PLUS_F1                // enable features common to all F1
   #define STM32PLUS_F1_CL             // enable features common to F105 and F107
   #define STM32F10X_CL                // for the std peripheral library
+#elif defined(STM32PLUS_F1_MD)
+  #define STM32PLUS_F1                // enable features common to all F1
+  #define STM32F10X_MD                // for the std peripheral library
 #elif defined(STM32PLUS_F1_MD_VL)
   #define STM32PLUS_F1                // enable features common to all F1
   #define STM32PLUS_F1_VL             // enable features common to all VL devices
